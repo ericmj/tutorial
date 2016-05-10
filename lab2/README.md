@@ -20,14 +20,11 @@ Implement the functions.
 Start an interactive shell with the modules in your project available with
 `$ iex -S mix`, your code can be tested from the shell.
 
-  1. Implement the `leave/2` function. Raise an error if the user leaving was
-     not previously a member of the function.
+  1. Implement the `leave/2` function. Raise an error if the user leaving was not previously a member of the room.
 
-  2. Implement the `new_message/3` function. A suggestion for the message type
-     is to use a map with the fields `:user` and `:text`.
+  2. Implement the `new_message/3` function. A suggestion for the message type is to use a map with the fields `:user` and `:text`.
 
-  3. Implement the function `messages_by_user/2`. Return all messages authored
-     by the given user.
+  3. Implement the function `messages_by_user/2`. Return all messages authored by the given user.
 
 
 ##### Advanced user problems (if you have more time)
