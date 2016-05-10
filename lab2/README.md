@@ -17,8 +17,7 @@ The `lab2` directory has a file `room.ex` which contains an implementation of ch
 room with some stubbed out functions. Copy the file to `lib/` in your project.
 Implement the functions.
 
-Start an interactive shell with the modules in your project available with
-`$ iex -S mix`, your code can be tested from the shell.
+Start an interactive shell with the modules in your project available with `$ iex -S mix`, your code can be tested from the shell.
 
   1. Implement the `leave/2` function. Raise an error if the user leaving was not previously a member of the room.
 
