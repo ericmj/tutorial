@@ -4,14 +4,14 @@ defmodule Chat.RoomTest do
   import ShouldI.Matchers.Context
   alias Chat.Room
 
-  with "empty room" do
+  having "empty room" do
     setup context do
       assign context, room: Room.new
     end
 
     should_match_key room: %Room{messages: [], members: []}
 
-    with "member bob" do
+    having "member bob" do
       setup context do
         assign context, room: Room.join(context.room, "bob")
       end
@@ -39,7 +39,7 @@ defmodule Chat.RoomTest do
       end
     end
 
-    with "members bob, jane and two messages" do
+    having "members bob, jane and two messages" do
       setup context do
         room = context.room
                |> Room.join("bob")
